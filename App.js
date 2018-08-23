@@ -48,7 +48,7 @@ const Main = createDrawerNavigator({
           )
         }
       },
-      AboutUs:{
+      Social:{
         screen: Aboutus,
         navigationOptions: {
           tabBarIcon:  ({tintColor }) => (

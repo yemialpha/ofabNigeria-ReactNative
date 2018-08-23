@@ -25,7 +25,7 @@ export default class HeaderIconExample extends Component {
           <Right>
           </Right>
         </Header>
-        <Content style={{backgroundColor: '#122e49'}}>
+        <Content>
         <List>
             <ListItem thumbnail>
               <Left>

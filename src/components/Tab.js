@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, CardItem, Body, Content, View, Tabs, Tab, TabHeading, ScrollableTab, Text } from 'native-base';
+import { Container, CardItem, Body, Left, Title, Tabs, Tab, TabHeading, Card, Text } from 'native-base';
 import {ScrollView} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
@@ -7,8 +7,80 @@ export default class SearchBarExample extends Component {
   render() {
     return (
       <Container style={{backgroundColor:'#122e49'}}>
-       <Tabs style={{backgroundColor: '#122e49'}} initialPage={0} style={{flex: 1}}>
-        <Tab heading={ <TabHeading><Ionicons style={{color:'#181818'}} size={25} name="ios-information-circle-outline" /><Text>Info</Text></TabHeading>}>
+       <Tabs initialPage={0} style={{flex: 1}}>
+        <Tab heading={ <TabHeading style={{backgroundColor: 'black'}}><Ionicons style={{color: 'gray'}} name="ios-people" size={24} /><Text>About Us</Text></TabHeading>}>
+          <ScrollView>
+          <CardItem style={{backgroundColor: '#122e49'}}>
+              <Left>
+                <Body>
+                  <Title style={{color: 'white'}}>About Us</Title>
+                  <Text note>
+                    A knowledge sharing initiative by African Agricultural Technology Foundation (AATF), Nairobi, Kenya, launched in 2006.
+                  </Text>
+                  <Text note>
+                    In Nigeria, OFAB is being hosted by the National Biotechnology Development Agency (NABDA) and co-hosted by Agricultural Research Council (ARCN), Mabushi, Abuja.
+                  </Text>
+                </Body>
+              </Left>
+            </CardItem>
+            <Card>
+             <CardItem  style={{backgroundColor: '#122e49'}}>
+               <Left>
+                 <Body>
+                 <Title  style={{margin: 10, color: 'white'}}>Mission                 
+              <Ionicons style={{marginHorizontal: 90, color: '#70b9ff'}} name="ios-bulb-outline" size={25} />
+              </Title>
+                <Text style={{color: 'white'}}>
+                  To enhance Knowledge sharing and awareness on agricultural biotechnology
+                </Text>
+                <Text note>
+                  To enhance Knowledge sharing and awareness on agricultural biotechnology that would raise understanding and 
+                   appreciation of the technology to building an enabling environment for informed and timely decision-making.
+                </Text>
+                </Body>
+                </Left>
+            </CardItem>
+          </Card>
+          <Card>
+             <CardItem  style={{backgroundColor: '#122e49'}}>
+               <Left>
+               <Body>
+                 <Title style={{color: 'white'}}>Objectives
+              <Ionicons style={{marginHorizontal: 90, color: '#70b9ff'}} name="md-radio-button-on" size={25} />
+              </Title>
+                <Text style={{color: 'white'}}>
+                  Establish and manage a range of platforms to enhance understanding of biotechnology in agriculture for productivity
+                </Text>
+                <Text note>
+                  Contribute to informing policy decision making processes on matters of agricultural biotechnology through provision of factual, well research and scientific information
+                </Text>
+                <Text note>
+                ntific information; Forge strategic alliances for optimization of resources through convening and encouraging inter-institutional networking and knowledge sharing in the agricultural biotechnology space
+                </Text>
+                <Text note>
+                ntific information; Forge strategic alliances for optimization of resources through convening and encouraging inter-institutional networking and knowledge sharing in the agricultural biotechnology space
+                </Text>
+                </Body>
+                </Left>
+            </CardItem>
+          </Card>
+          <Card>
+            <CardItem  style={{backgroundColor: '#122e49'}}>
+              <Left>
+                <Body>
+              <Title style={{color: 'white'}}>Vision
+              <Ionicons style={{marginHorizontal: 90, color: '#70b9ff'}} name="ios-eye-outline" size={25} />
+              </Title>
+            <Text style={{color: 'white'}}>
+            A food secure Africa where agricultural biotechnology is making significant contributions
+            </Text>
+            </Body>
+            </Left>
+            </CardItem>
+          </Card>
+            </ScrollView>
+          </Tab>
+          <Tab heading={ <TabHeading style={{backgroundColor: 'black'}}><Ionicons style={{color:'gray'}} size={25} name="ios-information-circle-outline" /><Text>Benefits of Biotechnology</Text></TabHeading>}>
           <ScrollView>
           <CardItem header bordered style={{backgroundColor: '#70b9ff'}}>
                  <Text style={{color: 'white'}}>Benefits of Biotechnology to Agriculture and Agro-industries</Text>
@@ -43,11 +115,7 @@ export default class SearchBarExample extends Component {
 
               </Body>
             </CardItem>
-            </ScrollView>
-          </Tab>
-          <Tab heading={ <TabHeading><Ionicons style={{color:'#181818'}} size={25} name="ios-information-circle-outline" /><Text>Info II</Text></TabHeading>}>
-          <ScrollView>
-              <CardItem header bordered style={{backgroundColor: '#70b9ff'}}>
+            <CardItem header bordered style={{backgroundColor: '#70b9ff'}}>
                     <Text style={{color: 'white'}}>Benefits of Biotechnology to industrial and Technological Development</Text>
               </CardItem>
           <CardItem bordered style={{backgroundColor: '#122e43'}}>

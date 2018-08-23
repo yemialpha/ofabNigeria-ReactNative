@@ -16,7 +16,7 @@ export default class HeaderExample extends Component {
             </Button>
           </Left>
           <Body>
-            <Title style={{color: '#122e49'}}>ofabNigeria</Title>
+            <Title style={{color: '#122e49'}}>OfabNigeria</Title>
           </Body>
           <Right>
           </Right>

@@ -21,18 +21,6 @@ export default class HeaderIconExample extends Component {
           </Right>
         </Header>
         <Content style={{backgroundColor: '#122e49'}}>
-          <View style={{flex: 1, padding: 5}}>
-             <Button onPress={() => Communications.web('https://www.facebook.com/ofabnigeria')}  primary block>
-             <Ionicons color='white' name="logo-facebook" size={25} />
-                <Text>Facabook</Text>
-              </Button>
-              </View>
-             <View style={{flex: 1, padding: 5}}>
-             <Button  onPress={() => Communications.web('https://twitter.com/ofabnigeria')} info block>
-             <Ionicons color='white' name="logo-twitter" size={25} />
-                <Text>Twitter</Text>
-              </Button>
-              </View>
               <View style={{flex: 1, padding: 5}}>
               <Button  onPress={() => Communications.email(['ofabnigeria@gmail.com'],null,null,'Your Subject','Your body text')} bordered block light>
               <Ionicons color='white'  name="ios-at-outline" size={25}/>
@@ -45,18 +33,6 @@ export default class HeaderIconExample extends Component {
                 <Text>Phone</Text>
               </Button>
              </View>
-             <View style={{flex: 1, padding: 5}}>
-              <Button block danger>
-              <Ionicons color='white'  name="logo-youtube" size={25} />
-                <Text>Youtube</Text>
-              </Button>
-              </View>
-              <View style={{flex: 1, padding: 5}}>
-              <Button  bordered block info>
-              <Ionicons color='white'  name="logo-instagram" size={25}/>
-                <Text>instgram</Text>
-              </Button>
-              </View>
           </Content> 
 
       </Container>
