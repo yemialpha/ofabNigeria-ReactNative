@@ -7,7 +7,7 @@ export default class CardImageExample extends Component {
   render() {
     return (
       <Container>
-     <Header style={{backgroundColor: '#a3f7ab'}}>
+     <Header style={{backgroundColor: '#98d6b0'}}>
           <Left>
           <Button onPress={ () =>{ this.props.navigation.openDrawer()}} transparent>
               <Icon name='menu' />

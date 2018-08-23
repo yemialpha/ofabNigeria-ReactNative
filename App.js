@@ -24,7 +24,7 @@ export default class App extends React.Component {
 const Drawer =  (props) => ( 
   <SafeAreaView style={{flex: 1}}>
    <View style={{backgroundColor: '#122e49', flex: 1, height: 200}}>
-   <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#a3f7ab', borderWidth: 2,
+   <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#98d6b0', borderWidth: 2,
    margin: 40, borderColor: '#181818', borderRadius: 30}}>
         <Text style={{color: '#181818',fontSize: 30, fontWeight: 'bold',}} >OFAB</Text>
         <Text style={{color: '#181818',fontSize: 30, fontWeight: 'bold',}}>NIGERIA</Text>
@@ -67,10 +67,10 @@ const Main = createDrawerNavigator({
     },
     {
       tabBarOptions: {
-        activeTintColor: '#181818',
-        inactiveTintColor: 'gray',
+        activeTintColor: '#70b9ff',
+        inactiveTintColor: 'black',
         style: {
-          backgroundColor: '#a3f7ab',
+          backgroundColor: '#98d6b0',
        }
     }
   }
@@ -86,7 +86,11 @@ const Main = createDrawerNavigator({
   {
     contentComponent: Drawer,
     contentOptions: {
-      activeTintColor: '#70b9ff'
+      activeTintColor: '#70b9ff',
+      inactiveTintColor: 'black',
+      style: {
+        backgroundColor: '#98d6b0',
+     }
     }
   }
 )
