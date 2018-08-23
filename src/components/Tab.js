@@ -80,10 +80,16 @@ export default class SearchBarExample extends Component {
           </Card>
             </ScrollView>
           </Tab>
-          <Tab heading={ <TabHeading style={{backgroundColor: 'black'}}><Ionicons style={{color:'gray'}} size={25} name="ios-information-circle-outline" /><Text>Benefits of Biotechnology</Text></TabHeading>}>
+          <Tab heading={ <TabHeading activeTextStyle={{color: '#fff', fontWeight: 'normal'}} style={{backgroundColor: 'black'}}><Ionicons style={{color:'gray'}} size={25} name="ios-information-circle-outline" /><Text>Benefits of Biotechnology</Text></TabHeading>}>
           <ScrollView>
-          <CardItem header bordered style={{backgroundColor: '#70b9ff'}}>
-                 <Text style={{color: 'white'}}>Benefits of Biotechnology to Agriculture and Agro-industries</Text>
+          <CardItem header bordered style={{backgroundColor: '#122e50'}}>
+                 <Left>
+                   <Body>
+                     <Text style={{color: 'white'}}>
+                     Benefits of Biotechnology to Agriculture and Agro-industries
+                     </Text>
+                   </Body>
+                 </Left>
             </CardItem>
             <CardItem bordered style={{backgroundColor: '#122e45'}}>
                 <Body>
@@ -96,7 +102,7 @@ export default class SearchBarExample extends Component {
                     <Text note>Tolerance to specific herbicides: glyphosate and glufosinate (mazie, cotton, soybean</Text>
                 </Body>
             </CardItem>
-            <CardItem header bordered style={{backgroundColor: '#70b9ff'}}>
+            <CardItem header bordered style={{backgroundColor: '#122e50'}}>
           <Text style={{color: 'white'}}>Benefits of Biotechnology; GMOs and Health</Text>
             </CardItem>
             <CardItem style={{backgroundColor: '#122e42'}} bordered>
@@ -115,7 +121,7 @@ export default class SearchBarExample extends Component {
 
               </Body>
             </CardItem>
-            <CardItem header bordered style={{backgroundColor: '#70b9ff'}}>
+            <CardItem header bordered style={{backgroundColor: '#122e50'}}>
                     <Text style={{color: 'white'}}>Benefits of Biotechnology to industrial and Technological Development</Text>
               </CardItem>
           <CardItem bordered style={{backgroundColor: '#122e43'}}>
@@ -125,7 +131,7 @@ export default class SearchBarExample extends Component {
                  <Text note>iii. Plastics and biofuels manufacture</Text>
                 </Body>
             </CardItem>
-            <CardItem header bordered style={{backgroundColor: '#70b9ff'}} >
+            <CardItem header bordered style={{backgroundColor: '#122e50'}} >
                <Text style={{color: 'white'}}>Benefits of Biotechnology to the Environment</Text>
               </CardItem>
              <CardItem style={{backgroundColor: '#122e42'}}>
