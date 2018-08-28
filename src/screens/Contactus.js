@@ -11,11 +11,11 @@ export default class HeaderIconExample extends Component {
       <Header style={{backgroundColor: '#98d6b0'}}>
           <Left>
           <Button onPress={ () =>{ this.props.navigation.openDrawer()}} transparent>
-              <Icon name='menu' />
+              <Icon style={{color: 'black'}} name='menu' />
             </Button>
           </Left>
           <Body>
-            <Title style={{color: '#122e49'}}>ofabNigeria</Title>
+            <Title style={{color: '#122e49'}}>OFAB</Title>
           </Body>
           <Right>
           </Right>
@@ -26,16 +26,16 @@ export default class HeaderIconExample extends Component {
             <Left>
               <Body>
                 <Title style={{color: 'white'}}>OFAB Nigeria</Title>
-               <Text note> National Biotechnology Development Agency(NABDA)</Text>
-               <Text note> Umar Musa Yar’adua Way, Lugbe,</Text>
-               <Text note> Email:ofabnigeria@gmail.com</Text>
-               <Text note> Facebook:www.facebook.com/ofabnigeria</Text>
-               <Text note> Twitter:@ofabnigeria</Text>
-               <Text note> Phone:+2348055604549,+2347052345766</Text>
-               <Text note> P.M.B.5118,</Text>
-               <Text note> Wuse, Abuja</Text>
-               <Text note> Federal Capital Territory</Text>
-               <Text note> info@ofabnigeria.com</Text>
+               <Text note style={{color: 'white'}}> National Biotechnology Development Agency(NABDA)</Text>
+               <Text note style={{color: 'white'}}> Umar Musa Yar’adua Way, Lugbe,</Text>
+               <Text note style={{color: 'white'}}> Email:ofabnigeria@gmail.com</Text>
+               <Text note style={{color: 'white'}}> Facebook:www.facebook.com/ofabnigeria</Text>
+               <Text note style={{color: 'white'}}> Twitter:@ofabnigeria</Text>
+               <Text note style={{color: 'white'}}> Phone:+2348055604549,+2347052345766</Text>
+               <Text note style={{color: 'white'}}> P.M.B.5118,</Text>
+               <Text note style={{color: 'white'}}> Wuse, Abuja</Text>
+               <Text note style={{color: 'white'}}> Federal Capital Territory</Text>
+               <Text note style={{color: 'white'}}> info@ofabnigeria.com</Text>
                </Body>
                </Left>
                 </CardItem>

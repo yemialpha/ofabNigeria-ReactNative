@@ -10,11 +10,11 @@ export default class CardImageExample extends Component {
      <Header style={{backgroundColor: '#98d6b0'}}>
           <Left>
           <Button onPress={ () =>{ this.props.navigation.openDrawer()}} transparent>
-              <Icon name='menu' />
+              <Icon style={{color: 'black'}} name='menu' />
             </Button>
           </Left>
           <Body>
-            <Title style={{color: '#122e49'}}>ofabNigeria</Title>
+            <Title style={{color: '#122e49'}}>OFAB</Title>
           </Body>
           <Right>
           </Right>

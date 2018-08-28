@@ -6,8 +6,9 @@ import Home from './src/screens/Home'
 import Aboutus from './src/screens/About';
 import Contact from './src/screens/Contactus';
 import Newss from './src/screens/News';
+import Faq from './src/screens/faq';
 import Presentations from './src/screens/Presentation';
-import { View, Text } from 'native-base';
+import { View, Text, Thumbnail } from 'native-base';
 
 
 
@@ -24,11 +25,11 @@ export default class App extends React.Component {
 const Drawer =  (props) => ( 
   <SafeAreaView style={{flex: 1}}>
    <View style={{backgroundColor: '#122e49', flex: 1, height: 200}}>
-   <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#98d6b0', borderWidth: 2,
-   margin: 40, borderColor: '#181818', borderRadius: 30}}>
-        <Text style={{color: '#181818',fontSize: 30, fontWeight: 'bold',}} >OFAB</Text>
-        <Text style={{color: '#181818',fontSize: 30, fontWeight: 'bold',}}>NIGERIA</Text>
-        <Ionicons color='#181818' name="md-globe" size={55} />
+   <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'white', borderWidth: 2,
+   margin: 40, padding: 10, borderColor: 'white', borderRadius: 30}}>
+        <Text style={{color: 'black',fontSize: 30, fontWeight: 'bold',}} >OFAB</Text>
+        <Text style={{color: 'black',fontSize: 30, fontWeight: 'bold',}}>NIGERIA</Text>
+        <Thumbnail square large source={{uri: 'https://firebasestorage.googleapis.com/v0/b/my-library-cca25.appspot.com/o/splash.png?alt=media&token=92fb89e6-64f0-48b3-b636-1cbc0dfba21a'}} />
   </View>
    </View>
   <ScrollView>
@@ -52,7 +53,7 @@ const Main = createDrawerNavigator({
         screen: Aboutus,
         navigationOptions: {
           tabBarIcon:  ({tintColor }) => (
-            <Ionicons name="ios-people" color={tintColor} size={24} />
+            <Ionicons name="md-contacts" color={tintColor} size={24} />
           )
         }
       },
@@ -67,7 +68,7 @@ const Main = createDrawerNavigator({
     },
     {
       tabBarOptions: {
-        activeTintColor: '#70b9ff',
+        activeTintColor: 'gray',
         inactiveTintColor: 'black',
         style: {
           backgroundColor: '#98d6b0',
@@ -76,9 +77,12 @@ const Main = createDrawerNavigator({
   }
   )
   },
-  News: {
+  Resources: {
         screen:Newss
   },
+  FQA: {
+    screen:Faq
+},
   OurPartners: {
     screen: Presentations
 },
@@ -86,7 +90,7 @@ const Main = createDrawerNavigator({
   {
     contentComponent: Drawer,
     contentOptions: {
-      activeTintColor: '#70b9ff',
+      activeTintColor: 'gray',
       inactiveTintColor: 'black',
       style: {
         backgroundColor: '#98d6b0',
