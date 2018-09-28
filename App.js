@@ -80,7 +80,7 @@ const Main = createDrawerNavigator({
   Resources: {
         screen:Newss
   },
-  FQA: {
+  FAQ: {
     screen:Faq
 },
   OurPartners: {
